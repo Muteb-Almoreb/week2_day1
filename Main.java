@@ -7,122 +7,28 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-//        int[] number = new int[5];
-//        char[] chara = new char[3];
-//        String[] s = new String[3];
-//        boolean[] b = new boolean[3];
-//        chara[0] = 'a';
-//        chara[1] = 'b';
-//        chara[2] = 'c';
-//        b[0] = true;
-//        b[1] = false;
-//        b[2] = true;
-//
-//        s[0] = "muteb";
-//        s[1] = "ahmed";
-//        s[2] = "almoreb";
-//
-//        number[0] = 10;
-//        number[1] = 20;
-//        number[2] = 30;
-//        number[3] = 40;
-//        number[4] = 50;
-//        System.out.println(Arrays.toString(chara));
-//        System.out.println(Arrays.toString(number));
-//        System.out.println(Arrays.toString(s));
-
-
-//        String name[] = {"ahmed", "ali", "mussab", "sami", "saleh"};
-//        System.out.println("enter length of arrays: ");
-//        int length = input.nextInt();
-//        int num[] = new int[length];
-//        int max = 0;
-//        for (int i = 0; i <= num.length - 1; i++) {
-//            System.out.println("enter numbers");
-//            int nums = input.nextInt();
-//            num[i] = nums;
-//
-//
-//        }
-//        ArrayList<String> cars= new ArrayList<>();
-//        cars.add("bmw");
-//        cars.add("chvy");
-//        cars.add("kia");
-//        cars.add("gmc");
-//        System.out.println(cars.get(0));
-//
-//        ArrayList<Integer> number = new ArrayList<>();
-//        ArrayList<Integer> numberE = new ArrayList<>();
-//        ArrayList<Integer> numberO = new ArrayList<>();
-//        number.add(12);
-//        number.add(25);
-//        number.add(7);
-//        number.add(8);
-//        number.add(10);
-//        number.add(5);
-//        number.add(55);
-//
-//        for (int i = 0; i <= number.size() - 1; i++) {
-//            if (number.get(i) % 2 == 0) {
-//                numberE.add(number.get(i));
-//            } else if (number.get(i) % 2 != 0)
-//                numberO.add(number.get(i));
-//
-//
-//        }
-//
-//
-//        System.out.println("even number" + numberE);
-//        System.out.println("odd number" + numberO);
-//
-//ArrayList<Integer> number = new ArrayList<>();
-//        number.add(12);
-//        number.add(25);
-//        number.add(7);
-//        number.add(8);
-//        number.add(10);
-//        number.add(5);
-//        number.add(55);
-//
-//        int total=0;
-//        for (int i = 0; i <number.size() ; i++) {
-//            total+=number.get(i);
-//
-//        }
-//        System.out.println(total/number.size());
-//
-//
-//    }
 
 //        //1.Write a Java program to test if the first and the last element of an array of
 //        //integers are same. The length of the array must be greater than or equal to
 //        //2 Test Data:
 //        //array = 50, -20, 0, 30, 40, 60, 10
+//       int[] num = new int[4];
+        
+        num[0] = 10;
+        num[1] = 20;
+        num[2] = 30;
+        num[3] = 10;
+        if (num.length >= 2) {
+            if (num[0] == num[num.length - 1]) {
+                System.out.println("true! , the number at first is same the nuumber of end: ");
+
+            }
+            else System.out.println("false! The first and last elements are not the same.");
+        }
+        else
+            System.out.println("Array must have at least 2 elements");
 //
-//        int [] num = new int [4];
-//        boolean isSame=true;
-//        num[0]=10;
-//        num[1]=20;
-//        num[2]=30;
-//        num[3]=40;
-////        for(int i=0;i<=num.length;i++)
-////        {
-////            if(num[i]==num[i])
-////            {
-////
-////
-////            }
-////
-////        }
-//
-//        if(num[0]==num[3])
-//        {
-//            System.out.println("true! , the number at first is same the nuumber of end: ");
-//
-//        }
-//        else
-//            System.out.println("false ! , the number at first is not same the nuumber of end:");
-//
+
 //
 ////2.Write a Java program to find the numbers greater than the average of the
 ////numbers of a given array.
@@ -149,19 +55,28 @@ public class Main {
 //        //Original Array:
 //        //[20, 30, 40]
 //
-//        int[] number = {20, 30, 40};
-//        int largV = 0;
 //
-//        for (int i = 0; i <= number.length - 1; i++) {
-//            if (number[i] >= largV) {
-//                largV = number[i];
+      
+//        //3.Write a Java program to get the larger value between first and last
+//        //element of an array of integers.
+//        //Original Array:
+//        //[20, 30, 40]
+//
+//        int[] number = {20, 30,50 ,60,};
 //
 //
-//            }
-//        }
-//        System.out.println(largV);
+//        int first = number[0];
+//        int last= number[number.length-1];
+//
+//        int largValue=(first>last) ? first : last;
+//
+//        System.out.println(largValue);
+//
+//
 
-//
+            }
+        }
+
 //        //4.Write a Java program to swap the first and last elements of an array and
 //        //create a new array.
 //
@@ -170,12 +85,18 @@ public class Main {
 //        number.add(20);
 //        number.add(30);
 //        number.add(40);
-//        for (int i = number.size() - 1; i >= 0; i--) {
-//            newNumber.add(number.get(i));
-//        }
-//        System.out.println("Original Array: " + number);
-//        System.out.println("New array after swapping the first and last elements: " + newNumber);
-
+//        number.add(50);
+//
+//
+//       System.out.println("Array Before swapping first and last: " + number);
+//
+//
+//        int numberZ=number.get(0);
+//        number.set(0 , number.get(number.size()-1 ));
+//        number.set(number.size()-1, numberZ);
+//        System.out.println("Array after swapping first and last: " + number);
+//    }
+//}
 //
 //        //5. Write a program that places the odd elements of an array before the
 //        //even elements.
